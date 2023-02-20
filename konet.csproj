@@ -8,7 +8,7 @@
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>konet-ext</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
-    <PackageId>konet</PackageId>
+    <PackageId>konet-ext</PackageId>
     <Version>0.0.5</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>images/logo.png</PackageIcon>
