@@ -21,12 +21,12 @@ jobs:
           
       - name: integration-test
         run: |
-          dotnet tool install --global --add-source ./nupkg konet
+          dotnet tool install --global --add-source ./nupkg konet-ext
           
           dotnet new console -n myconsoleapp
           cd myconsoleapp/
           
-          konet build -t localhost:5000/testuser/myconsoleapp:1.0
+          konet-ext build -t localhost:5000/testuser/myconsoleapp:1.0
           
           docker run --name test --pull always localhost:5000/testuser/myconsoleapp:1.0
           

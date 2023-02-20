@@ -12,9 +12,9 @@ public class PlatformMappingList : IEnumerable<PlatformMapping>
         {"windows/amd64:2004", "win-x64", "mcr.microsoft.com/windows/nanoserver:2004"},
         {"windows/amd64:20H2", "win-x64", "mcr.microsoft.com/windows/nanoserver:20H2"},
         {"windows/amd64:ltsc2022", "win-x64", "mcr.microsoft.com/windows/nanoserver:ltsc2022"},
-        {"linux/amd64", "linux-musl-x64", "mcr.microsoft.com/dotnet/runtime-deps:6.0-alpine"},
-        {"linux/arm/v7", "linux-arm", "mcr.microsoft.com/dotnet/runtime-deps:6.0"},
-        {"linux/arm64/v8", "linux-arm64", "mcr.microsoft.com/dotnet/runtime-deps:6.0"},
+        {"linux/amd64", "linux-musl-x64", "mcr.microsoft.com/dotnet/runtime-deps:7.0-alpine"},
+        {"linux/arm/v7", "linux-arm", "mcr.microsoft.com/dotnet/runtime-deps:7.0"},
+        {"linux/arm64/v8", "linux-arm64", "mcr.microsoft.com/dotnet/runtime-deps:7.0"},
     };
 
     private readonly Dictionary<Platform, PlatformMapping> _mappings = new();

@@ -119,10 +119,7 @@ internal class BuildCommand : Command
     }
 
     private static string GetBuildDirectory(string targetDirectory, string runtimeIdentifier)
-        // linux container images can't have the binary in root for some archs, therefore we put it in an "app" directory
-        => runtimeIdentifier.Contains("linux", StringComparison.InvariantCultureIgnoreCase)
-            ? Path.Join(targetDirectory, "app")
-            : targetDirectory;
+        => Path.Join(targetDirectory, "app")
     
     private static string GetEntryPoint(string runtimeIdentifier, string appName)
     {
