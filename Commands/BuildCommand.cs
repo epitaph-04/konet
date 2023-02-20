@@ -119,7 +119,7 @@ internal class BuildCommand : Command
     }
 
     private static string GetBuildDirectory(string targetDirectory, string runtimeIdentifier)
-        => Path.Join(targetDirectory, "app")
+        => Path.Join(targetDirectory, "app");
     
     private static string GetEntryPoint(string runtimeIdentifier, string appName)
     {
